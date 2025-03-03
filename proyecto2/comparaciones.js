@@ -2,17 +2,17 @@
 
 let calificacion = Number(prompt('Ingresa tu calificacion'));
 
-//Realizamos la condicional
+//Realizamos los condicionales
 
 if(calificacion >0){
     if(calificacion >=90){
-        console.log("Excelente");
+        console.log("Excelente, ¡Felicidades!");
     }else if(calificacion >=75 && calificacion <=89){
-        console.log("Bien");
+        console.log("Bien, sigue asi");
     }else if(calificacion >=60 && calificacion <=74){
-        console.log("Suficiente");
+        console.log("Suficiente, puedes mejorar");
     }else if(calificacion <60){
-        console.log("No aprobaste");
+        console.log("No aprobaste, esfuerzate mas");
     }
 }else{
     console.log("Ingresa una calificacion valida");
