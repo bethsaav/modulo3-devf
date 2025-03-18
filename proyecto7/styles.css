@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3b1e32;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    background: #522d6a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+}
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.password-box input {
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#copyBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.settings {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background: #c36087;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ef77a7;
+}
+
+/* Seguridad */
+#security-level {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.level {
+    font-weight: bold;
+    color: white;
+}
+
+.low {
+    color: red;
+}
+
+.medium {
+    color: orange;
+}
+
+.high {
+    color: limegreen;
+}
