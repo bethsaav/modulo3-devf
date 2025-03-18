@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Password</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Generador de Password</h1>
+    </header>
+
+    <main class="container">
+      <section class="password-display">
+        <label for="contraseña">Password Generada</label>
+        <input type="text" id="contraseña" readonly />
+        <button id="copiar">Copiar</button>
+      </section>
+
+      <section class="settings">
+        <label for="longitud">Longitud de la Password</label>
+        <input type="range" id="longitud" min="8" max="20" value="10" />
+        <span id="valor-longitud">10</span>
+        <fieldset class="checkboxes">
+          <legend>Opciones de Password</legend>
+          <label
+            ><input type="checkbox" id="mayuscula" checked /> Incluir Letras
+            Mayúsculas</label
+          >
+          <label
+            ><input type="checkbox" id="minuscula" checked /> Incluir Letras
+            Minúsculas</label
+          >
+          <label
+            ><input type="checkbox" id="numero" checked /> Incluir
+            Números</label
+          >
+          <label><input type="checkbox" id="simbolo" /> Incluir Símbolos</label>
+        </fieldset>
+      </section>
+
+      <section class="strength">
+        <label>Fortaleza de la Password:</label>
+        <span id="fortaleza">MEDIA</span>
+        <div class="strength-bar">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar empty"></div>
+        </div>
+      </section>
+      <button id="generar">Generar</button>
+    </main>
+
+    <script src="password.js"></script>
+  </body>
+</html>
